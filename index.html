@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Ponto de Orvalho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificação de Ponto de Orvalho</h1>
+
+        <label for="ura">Umidade Relativa do Ar (%):</label>
+        <input type="number" id="ura" step="0.01" required>
+
+        <label for="tempAr">Temperatura do Ar (°C):</label>
+        <input type="number" id="tempAr" step="0.01" required>
+
+                <label for="tempPeca">Temperatura da Superfície (°C):</label>
+        <input type="number" id="tempPeca" step="0.01" required>
+
+        <button onclick="calcularPontoOrvalho()">Verificar</button>
+
+        <label for="pontoOrvalho">Ponto de Orvalho (°C):</label>
+        <input type="text" id="pontoOrvalho" readonly>
+
+        <label for="aprovacao">Status:</label>
+        <input type="text" id="aprovacao" readonly>
+
+        <label for="resultado">Detalhes:</label>
+        <textarea id="resultado" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
